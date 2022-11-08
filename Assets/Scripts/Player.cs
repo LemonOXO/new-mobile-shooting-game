@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -104,5 +105,9 @@ public class Player : MonoBehaviour
             // 暫停 0.5 秒
             yield return new WaitForSeconds(0.5f);
         }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        SceneManager.LoadScene("Level2");
     }
 }
