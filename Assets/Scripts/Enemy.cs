@@ -27,6 +27,7 @@ public class Enemy : MonoBehaviour
             {
                 gameObject.SetActive(false);
                 Destroy(gameObject);
+                ScoreCode.Score = ScoreCode.Score + 1;
             }
         }
     }

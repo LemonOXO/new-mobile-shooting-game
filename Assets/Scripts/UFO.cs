@@ -27,6 +27,7 @@ public class UFO : MonoBehaviour
             {
                 gameObject.SetActive(false);
                 Destroy(gameObject);
+                ScoreCode.Score = ScoreCode.Score + 1;
             }
         }
     }
